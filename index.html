@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>विश्रांती टुर्स - Your Trusted Travel Companion</title>
+    <meta name="description" content="Vishranti Tours - Maharashtra's trusted travel agency. Explore India and international destinations with our expertly curated tour packages. फक्त फिरा, आनंद घ्या…">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="#hero" class="logo-link" aria-label="Vishranti Tours Homepage">
+                        <div class="logo-container">
+                            <img src="./resources/logo.jpg" alt="Vishranti Tours Logo" class="logo-icon-img" />
+                            <div class="logo-text-container">
+                                <span class="logo-text">Vishranti Tours</span>
+                                <span class="logo-subtext">विश्रांती टुर्स</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <nav class="nav" aria-label="Main navigation">
+                    <ul class="nav__list">
+                        <li><a href="#hero" class="nav__link">Home</a></li>
+                        <li><a href="#tours" class="nav__link">Tours</a></li>
+                        <li><a href="#services" class="nav__link">Services</a></li>
+                        <li><a href="#reviews" class="nav__link">Reviews</a></li>
+                        <li><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__controls">
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero__background"></div>
+            <div class="hero__overlay"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__title-main">Vishranti Tours</span>
+                        <span class="hero__title-sub">विश्रांती टुर्स</span>
+                    </h1>
+                    
+                    <p class="hero__tagline">Your trusted travel companion</p>
+                    
+                    <p class="hero__subtitle">फक्त फिरा, एन्जॉय करा…</p>
+                    
+                    <div class="hero__ctas">
+                        <button class="btn btn--primary btn--lg hero__cta-primary">Plan Your Dream Trip</button>
+                        <a href="https://wa.me/919876543210" class="btn btn--secondary btn--lg hero__cta-whatsapp" target="_blank">
+                            <span class="whatsapp-icon">💬</span>
+                            <span>Chat with Us</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero__trust-badge">
+                        <span class="trust-text">Serving happy Travellers since 2018</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why Choose Us Section -->
+        <section class="why-choose" id="why-choose">
+            <div class="container">
+                <h2 class="section__title">Why Travel with Vishranti?</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🕒</div>
+                        <h3 class="feature-card__title">Professional Tour Managers</h3>
+                        <p class="feature-card__desc">Experienced guides ensuring smooth and memorable travels</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-card__icon">✨🚗</div>
+                        <h3 class="feature-card__title">Personalized Planning &amp; Comfortable Travel</h3>
+                        <p class="feature-card__desc">Customized itineraries with AC buses and comfortable accommodation</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-card__icon">💰</div>
+                        <h3 class="feature-card__title">Transparent Pricing</h3>
+                        <p class="feature-card__desc">No hidden charges, clear pricing with value for money</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Popular Tours Section -->
+        <section class="popular-tours" id="tours">
+            <div class="container">
+                <h2 class="section__title">Explore Our Popular Destinations</h2>
+                
+                <div class="tours-grid">
+                    <div class="tour-card" data-tour-id="kerala">
+                        <div class="tour-card__image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1754822276/pplx_project_search_images/57039c5c856dd837e907951f7bd75135f3009a21.png');"></div>
+                        <div class="tour-card__content">
+                            <h3 class="tour-card__title">Kerala</h3>
+                            <button class="btn btn--outline btn--sm tour-card__cta" onclick="showTourDetails('Kerala')">Explore</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-card" data-tour-id="rajasthan">
+                        <div class="tour-card__image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1754744659/pplx_project_search_images/6a198b5bf8427423d1a61d770bfe2212306a24a7.png');"></div>
+                        <div class="tour-card__content">
+                            <h3 class="tour-card__title">Rajasthan</h3>
+                            <button class="btn btn--outline btn--sm tour-card__cta" onclick="showTourDetails('Rajasthan')">Explore</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-card" data-tour-id="kashmir-himachal">
+                        <div class="tour-card__image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1755231450/pplx_project_search_images/bc8679f55faf78bb82c08753bf961839149e61fa.png');"></div>
+                        <div class="tour-card__content">
+                            <h3 class="tour-card__title">Kashmir</h3>
+                            <button class="btn btn--outline btn--sm tour-card__cta" onclick="showTourDetails('Kashmir, Himachal, Uttarakhand')">Explore</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-card" data-tour-id="dubai">
+                        <div class="tour-card__image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1760538458/pplx_project_search_images/818a04c4f3621aaa799abdc5dea0785f609293c2.png');"></div>
+                        <div class="tour-card__content">
+                            <h3 class="tour-card__title">Dubai</h3>
+                            <button class="btn btn--outline btn--sm tour-card__cta" onclick="showTourDetails('Dubai & Abu Dhabi')">Explore</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-card" data-tour-id="vietnam">
+                        <div class="tour-card__image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1755496033/pplx_project_search_images/d21ed1ebb0577064517cc7bd369da281f6bfe806.png');"></div>
+                        <div class="tour-card__content">
+                            <h3 class="tour-card__title">Vietnam</h3>
+                            <button class="btn btn--outline btn--sm tour-card__cta" onclick="showTourDetails('Vietnam')">Explore</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-card" data-tour-id="andaman">
+                        <div class="tour-card__image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1755031913/pplx_project_search_images/304ed58f57fe0ad5b82c7bff3fd217dfffedfb97.png');"></div>
+                        <div class="tour-card__content">
+                            <h3 class="tour-card__title">Andaman &amp; Nicobar</h3>
+                            <button class="btn btn--outline btn--sm tour-card__cta" onclick="showTourDetails('Andaman & Nicobar')">Explore</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-card" data-tour-id="kashi-chardham">
+                        <div class="tour-card__image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1754879054/pplx_project_search_images/8442441025aa0b299d46488d552e51fc0cdd7843.png');"></div>
+                        <div class="tour-card__content">
+                            <h3 class="tour-card__title">Kashi Chardham</h3>
+                            <button class="btn btn--outline btn--sm tour-card__cta" onclick="showTourDetails('Kashi Chardham')">Explore</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-card" data-tour-id="odisha">
+                        <div class="tour-card__image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1755584498/pplx_project_search_images/55c84afe5c50b9ab52fd2be7bdb93d520621abb9.png');"></div>
+                        <div class="tour-card__content">
+                            <h3 class="tour-card__title">Odisha</h3>
+                            <button class="btn btn--outline btn--sm tour-card__cta" onclick="showTourDetails('Odisha')">Explore</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-card tour-card--more">
+                        <div class="tour-card__content">
+                            <h3 class="tour-card__title">And Many More...</h3>
+                            <button class="btn btn--primary btn--sm tour-card__cta" onclick="showAllTours()">View All Tours</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section__title">What We Offer</h2>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">🏖️</div>
+                        <h3 class="service-card__title">Honeymoon Packages</h3>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">👨‍👩‍👧‍👦</div>
+                        <h3 class="service-card__title">Family Tours</h3>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">🏨</div>
+                        <h3 class="service-card__title">Hotel Booking</h3>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">✨</div>
+                        <h3 class="service-card__title">Customized Tours</h3>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">🛂</div>
+                        <h3 class="service-card__title">Passport / Visa Assistance</h3>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">✈️</div>
+                        <h3 class="service-card__title">Flight Ticket Booking</h3>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">🚌</div>
+                        <h3 class="service-card__title">Bus Booking</h3>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card__icon">🚂</div>
+                        <h3 class="service-card__title">Railway Ticket Booking</h3>
+                    </div>
+                    
+                    <!-- <div class="service-card">
+                        <div class="service-card__icon">🏢</div>
+                        <h3 class="service-card__title">Corporate / Staff Retreats</h3>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section__title">What Our Travelers Say</h2>
+                
+                <div class="reviews-carousel">
+                    <div class="carousel-container">
+                        <button class="carousel-btn carousel-btn-prev" id="reviewsPrev" aria-label="Previous review">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        
+                        <div class="carousel-track-container">
+                            <div class="carousel-track" id="reviewsTrack">
+                                <div class="review-card carousel-slide">
+                                    <div class="review-card__rating">
+                                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    </div>
+                                    <p class="review-card__text">"Without any knowledge of Vishranti Tours I joined their Kerala tour with Madurai, Rameswar and Kanyakumari simply on recommendations of my sister. It was a pleasant and beautiful experience full of fun and joy. Very good planning and time management. Comfortable A.C. Bus with excellent driver and Clean good AC hotels."</p>
+                                    <div class="review-card__author">
+                                        <strong>Kerala Tour Customer</strong>
+                                        <span class="review-card__time">2 years ago</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review-card carousel-slide">
+                                    <div class="review-card__rating">
+                                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    </div>
+                                    <p class="review-card__text">"The trip to Rajasthan organized for us by Vishranti Tours was an unforgettable experience for me. The service offered to us by Vishranti Tours was exceptional, our twelve day journey was an unforgettable experience. The Vishranti tours meals were excellent. Special thanks to Rohan ji for providing us with special comfort."</p>
+                                    <div class="review-card__author">
+                                        <strong>Rajasthan Tour Customer</strong>
+                                        <span class="review-card__time">1 year ago</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review-card carousel-slide">
+                                    <div class="review-card__rating">
+                                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    </div>
+                                    <p class="review-card__text">"Our first International Trip to Dubai &amp; Abu Dhabi with Vishranti Tours was excellent. Tour Manager Mr. ROHAN is very co-operative."</p>
+                                    <div class="review-card__author">
+                                        <strong>Dubai Tour Customer</strong>
+                                        <span class="review-card__time">5 months ago</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review-card carousel-slide">
+                                    <div class="review-card__rating">
+                                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    </div>
+                                    <p class="review-card__text">"This is our 6th trip with vishrant travels and every time the experience is good. The trip was excellent, all arrangements made by Mr. Rohan vishranti travels was fantastic. Thank you Rohan. Looking forward for more trips with you"</p>
+                                    <div class="review-card__author">
+                                        <strong>Repeat Customer</strong>
+                                        <span class="review-card__time">1 year ago</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review-card carousel-slide">
+                                    <div class="review-card__rating">
+                                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    </div>
+                                    <p class="review-card__text">"We went for a Bangalore, Mysore, Ooty Kodaicanel, Madurai tours through this agency. Had a great experience in the Vishranti Tours, The manager guided us very well, The food facility was amazing. The tour was very good, fully enjoyed, there was a lot of fun in the tour. Thank you Rohan sir"</p>
+                                    <div class="review-card__author">
+                                        <strong>South India Tour Customer</strong>
+                                        <span class="review-card__time">2 years ago</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review-card carousel-slide">
+                                    <div class="review-card__rating">
+                                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    </div>
+                                    <p class="review-card__text">"We went for a Kashmir tour through this tour agency. Nice experience with this Tour agency.... Mr. Rohan is cooperative and have arranged a good tour and was with us till our tour ends. Had a nice experience. Thank you Mr. Rohan for making our tour rememberable."</p>
+                                    <div class="review-card__author">
+                                        <strong>Kashmir Tour Customer</strong>
+                                        <span class="review-card__time">3 years ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-btn carousel-btn-next" id="reviewsNext" aria-label="Next review">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="carousel-dots" id="reviewsDots"></div>
+                </div>
+                
+                <div class="google-rating">
+                    <div class="google-rating__badge">
+                        <span class="google-rating__score">4.6</span>
+                        <div class="google-rating__stars">⭐⭐⭐⭐⭐</div>
+                        <div class="google-rating__text">
+                            <span>Based on 128+ Google Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section__title">Get in Touch</h2>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact-item">
+                            <div class="contact-item__icon">📍</div>
+                            <div class="contact-item__content">
+                                <h3>Address</h3>
+                                <p>102, Shivani Heights, Malhar Peth<br>
+                                Near Police Headquarters<br>
+                                Satara – 415002, Maharashtra</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item__icon">📞</div>
+                            <div class="contact-item__content">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item__icon">📧</div>
+                            <div class="contact-item__content">
+                                <h3>Email</h3>
+                                <p><a href="mailto:vishrantitours@gmail.com">vishrantitours@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item__icon">🕒</div>
+                            <div class="contact-item__content">
+                                <h3>Hours</h3>
+                                <p>Mon–Sat: 9 AM – 7 PM, Sunday Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item contact-item--map">
+                            <div class="contact-item__content contact-item--full-width">
+                                <h3>Find Us</h3>
+                                <div class="map-container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.2257164118973!2d73.99733499999999!3d17.686794199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc23996db791f45%3A0xd7264dc550133d02!2sVishranti%20Tours!5e0!3m2!1sen!2sin!4v1760546822464!5m2!1sen!2sin" 
+                                            width="100%" 
+                                            height="300" 
+                                            style="border:0; border-radius: var(--radius-base);" 
+                                            allowfullscreen="" 
+                                            loading="lazy" 
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                            title="Vishranti Tours Location">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tour-interest" class="form-label">Tour Interest</label>
+                            <select id="tour-interest" name="tour-interest" class="form-control">
+                                <option value="domestic">Domestic</option>
+                                <option value="international">International</option>
+                                <option value="customized">Customized</option>
+                                <option value="corporate">Corporate</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="whatsapp-consent" name="whatsapp-consent">
+                                <span class="checkmark"></span>
+                                <span>I agree to receive updates on WhatsApp</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer-logo-container">
+                        <div class="footer-logo-container-img">
+                            <img src="./resources/logo.jpg" alt="Vishranti Tours Logo"  > 
+                        </div>                                         
+                        <div class="footer-logo-text-container">
+                            <h3 class="footer__logo">Vishranti Tours</h3>
+                            <span class="footer-logo-subtext">विश्रांती टुर्स</span>
+                        </div>
+                    </div>
+                    <p class="footer__tagline">Travel with trust — with Vishranti Tours</p>
+                    
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#tours">About Us</a></li>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__social">
+                    <h4 data-en="Follow Us" data-mr="आमचे अनुसरण करा">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/vishrantitours/" aria-label="Follow us on Facebook" target="_blank" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/vishrantitourssatara/" aria-label="Follow us on Instagram" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/@vishrantitours?si=2uqldZV2smZ6jyI6" aria-label="Follow us on YouTube" target="_blank" class="social-icon youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://maps.app.goo.gl/qBi8yhrnnbAo1sez5" aria-label="Find us on Google Maps" target="_blank" class="social-icon googlemaps">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 Vishranti Tours. All rights reserved.</p>
+                <p>Built by VishrantiTours</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" aria-label="Contact us on WhatsApp" target="_blank">
+        💬
+    </a>
+    
+    <!-- Tour Details Modal -->
+    <div class="modal" id="tour-modal">
+        <div class="modal__content tour-modal__content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="tour-details"></div>
+        </div>
+    </div>
+
+    <!-- All Tours Modal -->
+    <div class="modal" id="all-tours-modal">
+        <div class="modal__content all-tours-modal__content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="all-tours-content"></div>
+        </div>
+    </div>
+
+    <!-- Success Message Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal__content">
+            <h3>Thank You!</h3>
+            <p>We'll contact you within 24 hours.</p>
+            <button class="btn btn--primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+</body>
+</html>
