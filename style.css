@@ -1312,12 +1312,12 @@ a:hover {
 }
 
 .btn--primary {
-  background: var(--color-primary);
+  background: #FF6F61;
   color: var(--color-btn-primary-text);
 }
 
 .btn--primary:hover {
-  background: var(--color-primary-hover);
+  background: #E76F00;
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -1328,7 +1328,7 @@ a:hover {
 }
 
 .btn--secondary {
-  background: var(--color-secondary);
+  background: #00A896;
   color: var(--color-white);
 }
 
